@@ -1,0 +1,174 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Videos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "realLengthNumberSecond": {
+      "type": "integer"
+    },
+    "lengthTime": {
+      "type": "time"
+    },
+    "episode": {
+      "type": "integer"
+    },
+    "skillLevelOrder": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageVertical": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageHorizontal": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subTitulo": {
+      "type": "string"
+    },
+    "linkVideo": {
+      "type": "string"
+    },
+    "linkTrailer1": {
+      "type": "string"
+    },
+    "linkTrailer2": {
+      "type": "string"
+    },
+    "linkTrailer3": {
+      "type": "string"
+    },
+    "Promotion": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayProfile": {
+      "type": "integer"
+    },
+    "displayVideo": {
+      "type": "integer"
+    },
+    "trueStories": {
+      "type": "boolean",
+      "default": false
+    },
+    "beyondMov": {
+      "type": "boolean",
+      "default": false
+    },
+    "less10Minutes": {
+      "type": "boolean",
+      "default": false
+    },
+    "more10Minutes": {
+      "type": "boolean",
+      "default": false
+    },
+    "more20Minutes": {
+      "type": "boolean",
+      "default": false
+    },
+    "instrumental": {
+      "type": "boolean",
+      "default": false
+    },
+    "reflexions": {
+      "type": "boolean",
+      "default": false
+    },
+    "love": {
+      "type": "boolean",
+      "default": false
+    },
+    "trust": {
+      "type": "boolean",
+      "default": false
+    },
+    "conscience": {
+      "type": "boolean",
+      "default": false
+    },
+    "meditation": {
+      "type": "boolean",
+      "default": false
+    },
+    "espiritual": {
+      "type": "boolean",
+      "default": false
+    },
+    "rhythm": {
+      "type": "boolean"
+    },
+    "relax": {
+      "type": "boolean",
+      "default": false
+    },
+    "nigthStories": {
+      "type": "boolean",
+      "default": false
+    },
+    "startDay": {
+      "type": "boolean",
+      "default": false
+    },
+    "mistic": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "lengthMinutes": {
+      "type": "integer"
+    },
+    "Actualizado": {
+      "type": "boolean",
+      "default": false
+    },
+    "user_video": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-video.user-video",
+      "mappedBy": "video"
+    },
+    "isPremium": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

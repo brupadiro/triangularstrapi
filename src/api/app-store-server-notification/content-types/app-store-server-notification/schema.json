@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_store_server_notifications",
+  "info": {
+    "singularName": "app-store-server-notification",
+    "pluralName": "app-store-server-notifications",
+    "displayName": " App Store Server Notification"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "appAppleId": {
+      "type": "integer"
+    },
+    "bundleId": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "JWSRenewalInfo": {
+      "type": "json"
+    },
+    "JWSTransaction": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_videos",
+  "info": {
+    "singularName": "user-video",
+    "pluralName": "user-videos",
+    "displayName": "UserVideo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "secondViewed": {
+      "type": "float"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_videos"
+    },
+    "percentViewed": {
+      "type": "float"
+    },
+    "totalSecond": {
+      "type": "float"
+    },
+    "video": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::video.video",
+      "inversedBy": "user_video"
+    }
+  }
+}
