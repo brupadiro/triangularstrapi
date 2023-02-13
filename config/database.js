@@ -2,12 +2,12 @@ module.exports = ({ env }) => ({
   connection: {
     client: 'mysql',
     connection: {
-      host: env('DATABASE_HOST', 'private-db-mysql-triangular-do-user-11725987-0.b.db.ondigitalocean.com'),
-      port: env.int('DATABASE_PORT', 25060),
-      database: env('DATABASE_NAME', 'strapiDB'),
-      user: env('DATABASE_USERNAME', 'strapiUSer'),
-      password: env('DATABASE_PASSWORD', 'AVNS_EjuIK_VwZuPu-nnIW69'),
-      ssl: env.bool('DATABASE_SSL', true),
+      host: env('DATABASE_HOST', '45.148.28.72'),
+      port: env.int('DATABASE_PORT', 3306),
+      database: env('DATABASE_NAME', 'triangularDB'),
+      user: env('DATABASE_USERNAME', 'triangularUser'),
+      password: env('DATABASE_PASSWORD', '7coB0Ru5qq21liHZVA8ojE5vfypNLx0c'),
+      ssl: env.bool('DATABASE_SSL', false),
     },
   },
 });

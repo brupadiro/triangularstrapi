@@ -7,7 +7,21 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register({ strapi }) {
+    const io = require('socket.io')(strapi.server.httpServer, {
+      cors: { // cors setup
+        origin: "*",
+        methods: ["GET", "POST"],
+        credentials: false,
+      },
+    });
+    io.on('connection', (socket) => {
+      console.log('a user connected');
+      socket.on('disconnect', () => {
+        console.log('user disconnected');
+      });
+    });
+  },
 
   /**
    * An asynchronous bootstrap function that runs before

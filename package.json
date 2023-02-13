@@ -9,14 +9,15 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
-    "@strapi/plugin-i18n": "4.2.3",
+    "@strapi/plugin-i18n": "^4.6.1",
     "@strapi/plugin-users-permissions": "4.2.3",
+    "@strapi/provider-email-sendgrid": "^4.6.1",
     "@strapi/strapi": "^4.2.3",
     "mailgun-js": "^0.22.0",
     "mysql": "2.18.1",
+    "socket.io": "^4.6.0",
     "strapi-provider-upload-do": "^3.6.6"
   },
   "author": {
