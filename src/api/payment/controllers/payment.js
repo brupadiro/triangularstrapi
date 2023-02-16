@@ -18,7 +18,7 @@ module.exports = createCoreController('api::payment.payment',({ strapi }) => ({
                   product_data: {
                     name: 'Subscription',
                   },
-                  unit_amount: 15,
+                  unit_amount: 2000,
                 },
                 quantity: 1,
               },
